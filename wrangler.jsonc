@@ -8,4 +8,6 @@
   "assets": {
     "directory": "."
   }
+  // Custom domain (kitchen-cater.no) will be added here once the domain's
+  // DNS is managed by Cloudflare — see README.md for the steps.
 }
