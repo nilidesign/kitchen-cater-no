@@ -1,0 +1,10 @@
+.git
+.wrangler
+.claude
+.gitignore
+.assetsignore
+.DS_Store
+**/.DS_Store
+README.md
+kitchencater.png
+wrangler.jsonc
