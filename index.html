@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitchen Cater – Indisk & Pakistansk Catering i Lørenskog</title>
+  <meta name="description"
+    content="Kitchen Cater AS tilbyr autentisk indisk, pakistansk og kontinental mat i Lørenskog. Bestill take away på Foodora eller book catering til ditt neste arrangement.">
+  <meta name="theme-color" content="#7A1F2B">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kitchen Cater – Autentisk Indisk & Pakistansk Mat">
+  <meta property="og:description"
+    content="Catering og take away med ekte indisk og pakistansk smak, levert i Lørenskog og omegn. Bestill enkelt på Foodora.">
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:image"
+    content="https://commons.wikimedia.org/wiki/Special:FilePath/Murgh%20Makhani%20(Butter%20Chicken)%202%20(8925280003).jpg?width=1200">
+
+  <link rel="icon" href="assets/logo.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-spice">🌶️</div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">
+        <img src="assets/logo.png" alt="Kitchen Cater" class="logo-img">
+      </a>
+
+      <nav id="nav">
+        <ul>
+          <li><a href="#om-oss" class="nav-link">Om</a></li>
+          <li><a href="#meny" class="nav-link">Meny</a></li>
+          <li><a href="#catering" class="nav-link">Catering</a></li>
+          <li><a href="#frokost" class="nav-link">Frokost</a></li>
+        </ul>
+      </nav>
+
+      <a href="kontakt.html" rel="noopener" class="btn btn-gold header-cta">
+        <span>Kontakt</span>
+      </a>
+
+      <button id="burger" aria-label="Åpne meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <div id="mobile-nav">
+    <ul>
+      <li><a href="#om-oss" class="nav-link">Om</a></li>
+      <li><a href="#meny" class="nav-link">Meny</a></li>
+      <li><a href="#catering" class="nav-link">Catering</a></li>
+      <li><a href="#frokost" class="nav-link">Frokost</a></li>
+    </ul>
+    <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+      target="_blank" rel="noopener" class="btn btn-primary"
+      style="width:100%;justify-content:center;margin-top:24px;">Bestill på Foodora</a>
+  </div>
+  <div id="mobile-overlay"></div>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero-bg"
+      style="background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/Murgh%20Makhani%20(Butter%20Chicken)%202%20(8925280003).jpg?width=1600')">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-spices" aria-hidden="true">
+      <span>🌶️</span><span>🍛</span><span>🥘</span><span>🫓</span><span>🍚</span>
+    </div>
+    <div class="container hero-content">
+      <p class="eyebrow reveal">Lørenskog · Catering & Take Away</p>
+      <h1 class="reveal">Autentisk <span class="text-gold">pakistansk, indisk</span> &amp; <span
+          class="text-gold">kontinental</span> mat</h1>
+      <p class="hero-sub reveal">Kitchen Cater lager autentiske retter fra bunnen av med ekte krydder og friske råvarer
+        — perfekt til hverdagsmiddagen eller ditt neste store arrangement.</p>
+      <div class="hero-actions reveal">
+        <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+          target="_blank" rel="noopener" class="btn btn-gold btn-lg">
+          Bestill på Foodora
+        </a>
+        <a href="#meny" class="btn btn-outline btn-lg btn-outline-light">Se meny</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE STRIP ===== -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>✦ Autentisk Indisk Mat</span><span>✦ Autentisk Pakistansk Mat</span><span>✦ Catering til alle
+        anledninger</span><span>✦ Bestill enkelt på Foodora</span><span>✦ Ferske råvarer & ekte krydder</span>
+      <span>✦ Autentisk Indisk Mat</span><span>✦ Autentisk Pakistansk Mat</span><span>✦ Catering til alle
+        anledninger</span><span>✦ Bestill enkelt på Foodora</span><span>✦ Ferske råvarer & ekte krydder</span>
+    </div>
+  </div>
+
+  <!-- ===== OM OSS ===== -->
+  <section id="om-oss" class="section om-oss">
+    <div class="container om-oss-grid">
+      <div class="om-oss-media reveal">
+        <div class="img-stack">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Chicken%20khorma%20Hyderabad%20India.jpg?width=900"
+            alt="Rik kylling korma servert i kobberkjele med naan" class="img-main" loading="lazy">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kadai%20Paneer%20With%20Gravy.jpg?width=600"
+            alt="Paneer i rik tomatsaus, servert i kadai" class="img-floating" loading="lazy">
+        </div>
+      </div>
+      <div class="om-oss-text reveal">
+        <p class="eyebrow">Om oss</p>
+        <h2>Matlaging med hjerte, krydder og sjel</h2>
+        <p>Kitchen Cater AS er et lokalt drevet catringselskap fra Lørenskog, spesialisert på autentisk indisk og
+          pakistansk mat. Hos oss lages alt fra bunnen av — egne krydderblandinger, ferske urter og oppskrifter som er
+          gått i arv gjennom generasjoner.</p>
+        <p>Enten du bestiller take away via Foodora til hverdagsmiddagen, eller booker oss for et bryllup, en bursdag
+          eller bedriftsarrangement — vi setter samme stolthet inn i hver eneste rett som forlater kjøkkenet vårt.</p>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="feature-icon">🌿</span>
+            <div>
+              <h4>Ferske råvarer</h4>
+              <p>Ingenting fra pose eller pulver — alt lages fra bunnen av hver dag.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🔥</span>
+            <div>
+              <h4>Ekte tandoor-smak</h4>
+              <p>Grillet og bakt på tradisjonelt indisk vis for autentisk røkt smak.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">🎉</span>
+            <div>
+              <h4>Catering for alle anledninger</h4>
+              <p>Fra intime middager til store selskaper — vi skreddersyr menyen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENY ===== -->
+  <section id="meny" class="section meny">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Vår meny</p>
+        <h2>Populære retter</h2>
+        <p class="section-desc">Et lite utvalg av favorittene våre. Full meny og priser finner du på Foodora.</p>
+      </div>
+
+      <div class="menu-filters reveal">
+        <button class="filter-btn active" data-filter="all">Alle</button>
+        <button class="filter-btn" data-filter="kylling">Kylling</button>
+        <button class="filter-btn" data-filter="vegetar">Vegetar</button>
+        <button class="filter-btn" data-filter="tilbehor">Tilbehør</button>
+        <a href="https://www.foodora.no/restaurant/q4kj/swaad-by-kitchen-cater" target="_blank" rel="noopener"
+          class="filter-btn filter-link">🥐 Frokost</a>
+      </div>
+
+      <div class="menu-grid" id="menu-grid">
+
+        <article class="menu-card reveal" data-cat="kylling">
+          <div class="menu-card-img">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chicken%20makhani.jpg?width=700"
+              alt="Butter Chicken" loading="lazy">
+            <span class="menu-tag">Bestselger</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-title">
+              <h3>Butter Chicken</h3>
+            </div>
+            <p>Kremet mild currysaus med kylling.</p>
+            <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+              target="_blank" rel="noopener" class="menu-order">Bestill →</a>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="kylling">
+          <div class="menu-card-img">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Chicken%20Tikka%20Masala%20-%20Mohammed%20-%20Spice%20Of%20Life.jpg?width=700"
+              alt="Chicken Tikka Masala" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-title">
+              <h3>Chicken Tikka Masala</h3>
+            </div>
+            <p>Kremet og krydret currysaus med kylling.</p>
+            <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+              target="_blank" rel="noopener" class="menu-order">Bestill →</a>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="kylling">
+          <div class="menu-card-img">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kadai%20Murgh.jpg?width=700"
+              alt="Chicken Karahi" loading="lazy">
+            <span class="menu-tag">Sterk</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-title">
+              <h3>Chicken Karahi</h3>
+            </div>
+            <p>Tradisjonell kylling wok med tomatmasala.</p>
+            <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+              target="_blank" rel="noopener" class="menu-order">Bestill →</a>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="vegetar">
+          <div class="menu-card-img">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Palak%20Paneer%20(Cottage%20cheese%20in%20spinach%20gravy).jpg?width=700"
+              alt="Palak Paneer" loading="lazy">
+            <span class="menu-tag veg">Vegetar</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-title">
+              <h3>Palak Paneer</h3>
+            </div>
+            <p>Spinatcurry med myk paneer-ost.</p>
+            <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+              target="_blank" rel="noopener" class="menu-order">Bestill →</a>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="tilbehor vegetar">
+          <div class="menu-card-img">
+            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Samosa%20with%20sweet%20chutney.jpg?width=700"
+              alt="Veggie Samosa" loading="lazy">
+            <span class="menu-tag veg">Vegetar</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-title">
+              <h3>Veggie Samosa</h3>
+            </div>
+            <p>Sprø, gyllenstekt lomme fylt med potetmasala.</p>
+            <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+              target="_blank" rel="noopener" class="menu-order">Bestill →</a>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="tilbehor vegetar">
+          <div class="menu-card-img">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:FilePath/Butter%20Naan%20Flatbread%20from%20North%20India.jpg?width=700"
+              alt="Garlic Naan" loading="lazy">
+            <span class="menu-tag veg">Vegetar</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-title">
+              <h3>Garlic Naan</h3>
+            </div>
+            <p>Mykt naanbrød bakt i tandoor, med hvitløk.</p>
+            <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+              target="_blank" rel="noopener" class="menu-order">Bestill →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="meny-cta reveal">
+        <button type="button" class="btn btn-primary btn-lg open-pdf-menu" data-pdf="assets/meny.pdf">📄 Se hele menyen
+          (PDF)</button>
+        <a href="kontakt.html" class="btn btn-outline btn-lg">Bestill</a>
+      </div>
+
+      <div id="frokost" class="frokost-banner reveal">
+        <div class="frokost-banner-text">
+          <span class="frokost-icon">🥐</span>
+          <div>
+            <h3>Helgefrokost hos Swaad by Kitchen Cater</h3>
+            <p>Hver lørdag og søndag kl. 10.30–14.00 serverer vi tradisjonell lahori frokost — halwa puri, nihari,
+              haleem og mer — gjennom vårt søsterkonsept Swaad by Kitchen Cater.</p>
+          </div>
+        </div>
+        <a href="https://www.foodora.no/restaurant/q4kj/swaad-by-kitchen-cater" target="_blank" rel="noopener"
+          class="btn btn-gold">Bestill frokost på Foodora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATERING ===== -->
+  <section id="catering" class="section catering">
+    <div class="container catering-grid">
+      <div class="catering-text reveal">
+        <p class="eyebrow">Catering</p>
+        <h2>Vi tar med smaken av Pakistan &amp; India til ditt arrangement</h2>
+        <p>Fra bryllup og bursdager til bedriftslunsj og høytidsfeiringer — Kitchen Cater skreddersyr menyen etter dine
+          ønsker og antall gjester. Vi ordner alt fra små fat til store bufféer.</p>
+
+        <ul class="catering-list">
+          <li><span>💍</span> Bryllup &amp; forlovelsesfester</li>
+          <li><span>🎂</span> Bursdager &amp; private selskaper</li>
+          <li><span>🏢</span> Bedriftslunsj &amp; -arrangementer</li>
+          <li><span>🕌</span> Høytider &amp; religiøse feiringer</li>
+        </ul>
+
+        <a href="kontakt.html" class="btn btn-primary btn-lg">Ta kontakt for tilbud</a>
+      </div>
+      <div class="catering-media reveal">
+        <img
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/Chicken%20Biryani%20from%20the%20streets%20of%20Hyderabad.JPG?width=900"
+          alt="Catering-servering av indisk mat" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BEDRIFTSKUNDER ===== -->
+  <section id="bedriftskunder" class="section bedriftskunder">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Tillit</p>
+        <h2>Våre faste bedriftskunder</h2>
+        <p class="section-desc">Vi leverer catering jevnlig til noen av Norges mest kjente virksomheter og
+          organisasjoner.</p>
+      </div>
+      <div class="logo-grid reveal" id="logo-grid">
+        <div class="logo-item"><img src="assets/logos/nrk.png" alt="NRK" loading="lazy"></div>
+        <div class="logo-item"><img src="assets/logos/uio.png" alt="Universitetet i Oslo" loading="lazy"></div>
+        <div class="logo-item"><img src="assets/logos/ahus.svg" alt="Akershus universitetssykehus" loading="lazy"></div>
+        <div class="logo-item"><img src="assets/logos/bring.png" alt="Bring" loading="lazy"></div>
+        <div class="logo-item"><img src="assets/logos/posten.png" alt="Posten" loading="lazy"></div>
+        <div class="logo-item"><img src="assets/logos/connectbus.svg" alt="Connect Bus" loading="lazy"></div>
+        <div class="logo-item"><img src="assets/logos/oslo.png" alt="Oslo kommune" loading="lazy"></div>
+        <div class="logo-item"><img src="assets/logos/lin.png" alt="LIN – Likestilling, Inkludering og Nettverk"
+            loading="lazy"></div>
+        <div class="logo-item"><span class="logo-fallback">Mennesker i fokus</span></div>
+        <div class="logo-item"><img src="assets/logos/reitan.png" alt="Reitan Gruppen" loading="lazy"></div>
+        <div class="logo-item"><img src="assets/logos/sporveien.png" alt="Sporveien" loading="lazy"></div>
+        <div class="logo-item"><img src="assets/logos/lofavor.jpg" alt="LO Favør" loading="lazy"></div>
+        <div class="logo-item"><img src="assets/logos/lorenskog.png" alt="Lørenskog kommune" loading="lazy"></div>
+        <div class="logo-item"><img src="assets/logos/akershusfk.png" alt="Akershus fylkeskommune" loading="lazy"></div>
+        <div class="logo-item"><img src="assets/logos/nhoreiseliv.png" alt="NHO Reiseliv" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SELSKAPSLOKALE / PAKKE ===== -->
+  <section id="selskapslokale" class="section selskapslokale">
+    <div class="container selskapslokale-inner reveal">
+      <p class="eyebrow">Lokale &amp; pakkeløsning</p>
+      <h2>Leie selskapslokale med ferdig pakkeløsning</h2>
+      <p>Slipp stresset med å arrangere selv. Vi tilbyr selskapslokale kombinert med skreddersydd catering i én komplett
+        pakke — perfekt til bryllup, jubileum, minnestund eller bedriftsfest. Vi tar oss av mat, servering og oppsett,
+        slik at du kan fokusere på gjestene dine.</p>
+      <ul class="selskapslokale-list">
+        <li><span>🏛️</span> Selskapslokale tilpasset antall gjester</li>
+        <li><span>🍽️</span> Komplett meny inkludert i pakken</li>
+        <li><span>🧑‍🍳</span> Servering og opprigg på stedet</li>
+        <li><span>💬</span> Skreddersydd tilbud basert på ditt behov</li>
+      </ul>
+      <a href="kontakt.html" class="btn btn-gold btn-lg">Ta kontakt for pakketilbud</a>
+    </div>
+  </section>
+
+  <!-- ===== GALLERI ===== -->
+  <section id="galleri" class="section galleri">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Galleri</p>
+        <h2>Et smakfullt innblikk</h2>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal"
+          data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Murgh%20Makhani%20(Butter%20Chicken)%202%20(8925280003).jpg?width=1400">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Murgh%20Makhani%20(Butter%20Chicken)%202%20(8925280003).jpg?width=600"
+            alt="Butter Chicken" loading="lazy">
+        </div>
+        <div class="gallery-item reveal"
+          data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Dum%20Chicken%20Biryani%2001.jpg?width=1400">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dum%20Chicken%20Biryani%2001.jpg?width=600"
+            alt="Biryani" loading="lazy">
+        </div>
+        <div class="gallery-item reveal"
+          data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Tandoori%20Chicken%20Homemade.JPG?width=1400">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tandoori%20Chicken%20Homemade.JPG?width=600"
+            alt="Tandoori Chicken" loading="lazy">
+        </div>
+        <div class="gallery-item reveal"
+          data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Naan%20baked%20in%20Tandoor.jpg?width=1400">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Naan%20baked%20in%20Tandoor.jpg?width=600"
+            alt="Naan i tandoor" loading="lazy">
+        </div>
+        <div class="gallery-item reveal"
+          data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Samosa%20with%20sweet%20chutney.jpg?width=1400">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Samosa%20with%20sweet%20chutney.jpg?width=600"
+            alt="Samosa" loading="lazy">
+        </div>
+        <div class="gallery-item reveal"
+          data-full="https://commons.wikimedia.org/wiki/Special:FilePath/Indian%20yellow%20and%20orange%20spices.jpg?width=1400">
+          <img
+            src="https://commons.wikimedia.org/wiki/Special:FilePath/Indian%20yellow%20and%20orange%20spices.jpg?width=600"
+            alt="Indiske krydder" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <button id="lightbox-close" aria-label="Lukk">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <!-- PDF menu modal -->
+  <div id="pdf-modal">
+    <div class="pdf-modal-box">
+      <div class="pdf-modal-head">
+        <span>Vår meny</span>
+        <div class="pdf-modal-actions">
+          <a id="pdf-download" href="assets/meny.pdf" download class="btn btn-outline">Last ned PDF</a>
+          <button id="pdf-modal-close" aria-label="Lukk">&times;</button>
+        </div>
+      </div>
+      <iframe id="pdf-frame" title="Meny PDF" src="" width="100%" height="100%" style="border:0;"></iframe>
+    </div>
+  </div>
+
+  <!-- ===== CTA STRIPE ===== -->
+  <section class="cta-stripe">
+    <div class="container cta-stripe-inner reveal">
+      <h2>Sulten allerede?</h2>
+      <p>Bestill take away rett hjem på under 30 minutter — enkelt via Foodora.</p>
+      <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+        target="_blank" rel="noopener" class="btn btn-gold btn-lg">🛵 Bestill på Foodora</a>
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT ===== -->
+  <section id="kontakt" class="section kontakt">
+    <div class="container kontakt-grid">
+      <div class="kontakt-info reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Finn oss</h2>
+        <p class="section-desc">Har du spørsmål om catering, eller vil bestille til et arrangement? Ta kontakt eller
+          bestill take away direkte på Foodora.</p>
+
+        <div class="info-card">
+          <div class="info-row">
+            <span class="info-icon">📍</span>
+            <div>
+              <h4>Adresse</h4>
+              <p>Skårerveien 30, 1470 Lørenskog</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">🏢</span>
+            <div>
+              <h4>Kitchen Cater AS</h4>
+              <p>Org.nr: 934 671 228</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">🛵</span>
+            <div>
+              <h4>Bestilling</h4>
+              <p>Take away og levering skjer via Foodora</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="kontakt-btn-row">
+          <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+            target="_blank" rel="noopener" class="btn btn-primary btn-lg">Bestill på Foodora</a>
+          <a href="kontakt.html" class="btn btn-outline btn-lg">Send forespørsel</a>
+        </div>
+      </div>
+
+      <div class="kontakt-map reveal">
+        <iframe title="Kart til Kitchen Cater"
+          src="https://www.google.com/maps?q=Sk%C3%A5rerveien+30,+1470+L%C3%B8renskog&output=embed" width="100%"
+          height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <img src="assets/logo.png" alt="Kitchen Cater" class="logo-img footer-logo-img">
+        </a>
+        <p>Autentisk indisk, pakistansk &amp; kontinental mat og catering fra Lørenskog.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigasjon</h4>
+        <ul>
+          <li><a href="#om-oss">Om oss</a></li>
+          <li><a href="#meny">Meny</a></li>
+          <li><a href="#frokost">Frokost</a></li>
+          <li><a href="#catering">Catering</a></li>
+          <li><a href="#selskapslokale">Selskapslokale</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kitchen Cater AS</h4>
+        <ul>
+          <li>Skårerveien 30, 1470 Lørenskog</li>
+          <li>Org.nr: 934 671 228</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Bestill</h4>
+        <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+          target="_blank" rel="noopener" class="btn btn-outline btn-outline-light">Foodora</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="year"></span> Kitchen Cater AS. Alle rettigheter reservert.</p>
+        <p class="credit">Utviklet av <a href="https://nilidesign.no" target="_blank" rel="noopener">NiliDesign</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating order button -->
+  <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+    target="_blank" rel="noopener" id="float-order" aria-label="Bestill på Foodora">
+    <span>🛵</span>
+  </a>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Til toppen">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

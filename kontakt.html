@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt oss – Kitchen Cater</title>
+  <meta name="description"
+    content="Ta kontakt med Kitchen Cater for catering, selskapslokale eller andre arrangementer. Send oss en forespørsel, så setter vi opp et skreddersydd tilbud.">
+  <meta name="theme-color" content="#7A1F2B">
+
+  <link rel="icon" href="assets/logo.png" type="image/png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ===== LOADER ===== -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-spice">🌶️</div>
+  </div>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header" class="scrolled" data-always-scrolled="true">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Kitchen Cater" class="logo-img">
+        <span class="logo-tagline">Pakistansk &amp; Indian/Continental</span>
+      </a>
+
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html#om-oss" class="nav-link">Om</a></li>
+          <li><a href="index.html#meny" class="nav-link">Meny</a></li>
+          <li><a href="index.html#catering" class="nav-link">Catering</a></li>
+          <li><a href="index.html#frokost" class="nav-link">Frokost</a></li>
+        </ul>
+      </nav>
+
+      <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+        target="_blank" rel="noopener" class="btn btn-gold header-cta">
+        <span>Bestill nå</span>
+      </a>
+
+      <button id="burger" aria-label="Åpne meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <div id="mobile-nav">
+    <ul>
+      <li><a href="index.html#om-oss" class="nav-link">Om</a></li>
+      <li><a href="index.html#meny" class="nav-link">Meny</a></li>
+      <li><a href="index.html#catering" class="nav-link">Catering</a></li>
+      <li><a href="index.html#frokost" class="nav-link">Frokost</a></li>
+    </ul>
+    <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+      target="_blank" rel="noopener" class="btn btn-primary"
+      style="width:100%;justify-content:center;margin-top:24px;">Bestill på Foodora</a>
+  </div>
+  <div id="mobile-overlay"></div>
+
+  <!-- ===== KONTAKTSKJEMA ===== -->
+  <section id="kontaktskjema" class="section kontaktskjema">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Book ditt arrangement</p>
+        <h2>Send oss en forespørsel</h2>
+        <p class="section-desc">Fyll ut skjemaet, så setter vi opp et skreddersydd tilbud til deg. Skjemaet åpner din
+          e-post med informasjonen ferdig utfylt.</p>
+      </div>
+
+      <form id="contact-form" class="contact-form reveal" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="cf-navn">Navn</label>
+            <input type="text" id="cf-navn" name="navn" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="cf-mobil">Mobil</label>
+            <input type="tel" id="cf-mobil" name="mobil" autocomplete="tel" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="cf-antall">Antall personer</label>
+            <input type="number" id="cf-antall" name="antall" min="1" placeholder="f.eks. 40">
+          </div>
+          <div class="form-field">
+            <label for="cf-dato">Dato</label>
+            <input type="date" id="cf-dato" name="dato">
+          </div>
+        </div>
+        <div class="form-field">
+          <span class="form-label">Hva gjelder henvendelsen?</span>
+          <div class="checkbox-group">
+            <label class="checkbox-item"><input type="checkbox" name="type" value="Catering"> Catering</label>
+            <label class="checkbox-item"><input type="checkbox" name="type" value="Selskapslokale">
+              Selskapslokale</label>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="cf-melding">Melding</label>
+          <textarea id="cf-melding" name="melding" rows="4"
+            placeholder="Fortell oss litt om arrangementet ditt..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Send forespørsel</button>
+        <p class="form-note" id="form-note">Ved innsending åpnes din e-postklient med forespørselen klar til å sendes
+          til oss.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== KONTAKT INFO ===== -->
+  <section id="kontakt" class="section kontakt">
+    <div class="container kontakt-grid">
+      <div class="kontakt-info reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Finn oss</h2>
+        <p class="section-desc">Har du spørsmål om catering, eller vil bestille til et arrangement? Ta kontakt eller
+          bestill take away direkte på Foodora.</p>
+
+        <div class="info-card">
+          <div class="info-row">
+            <span class="info-icon">📍</span>
+            <div>
+              <h4>Adresse</h4>
+              <p>Skårerveien 30, 1470 Lørenskog</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">🏢</span>
+            <div>
+              <h4>Kitchen Cater AS</h4>
+              <p>Org.nr: 934 671 228</p>
+            </div>
+          </div>
+          <div class="info-row">
+            <span class="info-icon">🛵</span>
+            <div>
+              <h4>Bestilling</h4>
+              <p>Take away og levering skjer via Foodora</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+          target="_blank" rel="noopener" class="btn btn-primary btn-lg">Bestill på Foodora</a>
+      </div>
+
+      <div class="kontakt-map reveal">
+        <iframe title="Kart til Kitchen Cater"
+          src="https://www.google.com/maps?q=Sk%C3%A5rerveien+30,+1470+L%C3%B8renskog&output=embed" width="100%"
+          height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <img src="assets/logo.png" alt="Kitchen Cater" class="logo-img footer-logo-img">
+        </a>
+        <p>Autentisk indisk, pakistansk &amp; kontinental mat og catering fra Lørenskog.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigasjon</h4>
+        <ul>
+          <li><a href="index.html#om-oss">Om oss</a></li>
+          <li><a href="index.html#meny">Meny</a></li>
+          <li><a href="index.html#frokost">Frokost</a></li>
+          <li><a href="index.html#catering">Catering</a></li>
+          <li><a href="index.html#selskapslokale">Selskapslokale</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Kitchen Cater AS</h4>
+        <ul>
+          <li>Skårerveien 30, 1470 Lørenskog</li>
+          <li>Org.nr: 934 671 228</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Bestill</h4>
+        <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+          target="_blank" rel="noopener" class="btn btn-outline btn-outline-light">Foodora</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="year"></span> Kitchen Cater AS. Alle rettigheter reservert.</p>
+        <p class="credit">Utviklet av <a href="https://nilidesign.no" target="_blank" rel="noopener">NiliDesign</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating order button -->
+  <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+    target="_blank" rel="noopener" id="float-order" aria-label="Bestill på Foodora">
+    <span>🛵</span>
+  </a>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Til toppen">↑</button>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
