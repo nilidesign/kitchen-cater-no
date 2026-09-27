@@ -23,12 +23,30 @@ git clone https://github.com/nilidesign/kitchen-cater-no.git
 
 ## Hosting: Cloudflare (Workers static assets)
 
-Siden er live på: **https://kitchen-cater-no.nilan-perumal.workers.dev**
+Siden er live på:
+- **https://kitchen-cater.no** (og www.kitchen-cater.no)
+- https://kitchen-cater-no.nilan-perumal.workers.dev (workers.dev-adresse, fungerer alltid)
 
-Deploy skjer med [Wrangler](https://developers.cloudflare.com/workers/wrangler/):
+### Automatisk deploy (GitHub Actions)
+
+Hver `git push` til `main` deployer automatisk til Cloudflare via
+`.github/workflows/deploy.yml`. Dette krever at repo-secreten
+`CLOUDFLARE_API_TOKEN` er satt (Settings → Secrets and variables → Actions
+på GitHub-repoet), opprettet med malen **"Edit Cloudflare Workers"** på
+[dash.cloudflare.com/profile/api-tokens](https://dash.cloudflare.com/profile/api-tokens).
+
+Vanlig arbeidsflyt for en innholdsendring:
+```bash
+git add .
+git commit -m "Beskrivelse av endringen"
+git push
+```
+Det er alt — ingen manuell deploy-kommando nødvendig.
+
+### Manuell deploy (om nødvendig)
 
 ```bash
-npx wrangler login      # kun første gang
+npx wrangler login      # kun første gang på en ny maskin
 npx wrangler deploy
 ```
 
@@ -36,21 +54,11 @@ npx wrangler deploy
 (`.git`, `.wrangler`, `.claude`, osv.) **ikke** blir lastet opp og servert offentlig
 — ikke fjern denne filen.
 
-### Koble på eget domene (kitchen-cater.no)
+### Eget domene (kitchen-cater.no)
 
-Domenet er foreløpig ikke koblet til Cloudflare. For å aktivere `kitchen-cater.no`:
-
-1. Logg inn på [dash.cloudflare.com](https://dash.cloudflare.com) → **Add a site** → skriv inn `kitchen-cater.no` → velg gratis-planen.
-2. Cloudflare gir deg 2 nameservere (f.eks. `xxx.ns.cloudflare.com`).
-3. Gå til domeneregistraren der `kitchen-cater.no` er kjøpt, og bytt nameserverne til de Cloudflare oppga. (Dette kan ta noen timer til opptil et døgn å slå gjennom.)
-4. Når domenet viser som **Active** i Cloudflare-dashbordet, legg til dette i `wrangler.jsonc` (fjern kommentarlinjen og legg til):
-   ```jsonc
-   "routes": [
-     { "pattern": "kitchen-cater.no", "custom_domain": true },
-     { "pattern": "www.kitchen-cater.no", "custom_domain": true }
-   ]
-   ```
-5. Kjør `npx wrangler deploy` på nytt.
+Allerede koblet til via `routes` i `wrangler.jsonc` (custom domain på både
+apex og www). DNS driftes hos Cloudflare — nameserverne ble byttet hos
+Domeneshop, og gamle "parkert side"-poster (A/AAAA) er fjernet fra DNS.
 
 ## Redigere innhold
 
