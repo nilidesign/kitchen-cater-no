@@ -104,9 +104,10 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach(el => io.observe(el));
   }
 
-  // ---- Menu filters ---- (data-filter excludes the Frokost link, which navigates instead)
+  // ---- Menu filters ---- (scoped to #menu-grid only — other .menu-card grids,
+  // like Hakka Chinese, have no data-cat and aren't meant to be filtered)
   const filterBtns = document.querySelectorAll('.filter-btn[data-filter]');
-  const menuCards = document.querySelectorAll('.menu-card');
+  const menuCards = document.querySelectorAll('#menu-grid .menu-card');
   if (filterBtns.length && menuCards.length) {
     filterBtns.forEach(btn => {
       btn.addEventListener('click', () => {

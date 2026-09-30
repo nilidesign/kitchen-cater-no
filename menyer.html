@@ -32,7 +32,6 @@
     <div class="container header-inner">
       <a href="index.html" class="logo">
         <img src="assets/logo.png" alt="Kitchen Cater" class="logo-img">
-        <span class="logo-tagline">Pakistansk &amp; Indian/Continental</span>
       </a>
 
       <nav id="nav">
@@ -41,7 +40,6 @@
           <li><a href="menyer.html" class="nav-link active">Menyer</a></li>
           <li><a href="index.html#catering" class="nav-link">Catering</a></li>
           <li><a href="pakker.html" class="nav-link">Pakker</a></li>
-          <li><a href="menyer.html#frokost" class="nav-link">Frokost</a></li>
         </ul>
       </nav>
 
@@ -64,7 +62,6 @@
       <li><a href="menyer.html" class="nav-link active">Menyer</a></li>
       <li><a href="index.html#catering" class="nav-link">Catering</a></li>
       <li><a href="pakker.html" class="nav-link">Pakker</a></li>
-      <li><a href="menyer.html#frokost" class="nav-link">Frokost</a></li>
     </ul>
     <a href="tel:+4793009545" class="header-phone header-phone-mobile">📞 Ring 930 09 545</a>
     <a href="kontakt.html" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:24px;">Få
@@ -85,14 +82,57 @@
       <h3 class="menu-subheading">Populære retter</h3>
       <div class="menu-filters reveal">
         <button class="filter-btn active" data-filter="all">Alle</button>
+        <button class="filter-btn" data-filter="kjott">Kjøtt</button>
+        <button class="filter-btn" data-filter="grill">Grill</button>
         <button class="filter-btn" data-filter="kylling">Kylling</button>
         <button class="filter-btn" data-filter="vegetar">Vegetar</button>
         <button class="filter-btn" data-filter="tilbehor">Tilbehør</button>
-        <a href="https://www.foodora.no/restaurant/q4kj/swaad-by-kitchen-cater" target="_blank" rel="noopener"
-          class="filter-btn filter-link">🥐 Frokost</a>
       </div>
 
       <div class="menu-grid" id="menu-grid">
+
+        <article class="menu-card reveal" data-cat="kjott">
+          <div class="menu-card-img">
+            <img src="assets/retter/lamb-karahi.jpg" alt="Lamb Karahi" loading="lazy">
+            <span class="menu-tag">Sterk</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-title">
+              <h3>Lamb Karahi</h3>
+            </div>
+            <p>Tradisjonell lam wok med tomatmasala.</p>
+            <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+              target="_blank" rel="noopener" class="menu-order">Bestill →</a>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="kjott">
+          <div class="menu-card-img">
+            <img src="assets/retter/kabuli-pulao.jpg" alt="Kabuli Pulao" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-title">
+              <h3>Kabuli Pulao</h3>
+            </div>
+            <p>Krydret ris med lammekjøtt, gulrot og rosiner.</p>
+            <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+              target="_blank" rel="noopener" class="menu-order">Bestill →</a>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="grill">
+          <div class="menu-card-img">
+            <img src="assets/retter/mix-grill.jpg" alt="Mix Grill" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-title">
+              <h3>Mix Grill</h3>
+            </div>
+            <p>Et utvalg av grillede kjøttretter fra grillen vår.</p>
+            <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+              target="_blank" rel="noopener" class="menu-order">Bestill →</a>
+          </div>
+        </article>
 
         <article class="menu-card reveal" data-cat="kylling">
           <div class="menu-card-img">
@@ -153,16 +193,16 @@
           </div>
         </article>
 
-        <article class="menu-card reveal" data-cat="kylling">
+        <article class="menu-card reveal" data-cat="vegetar tilbehor">
           <div class="menu-card-img">
-            <img src="assets/retter/lamb-karahi.jpg" alt="Lamb Karahi" loading="lazy">
-            <span class="menu-tag">Sterk</span>
+            <img src="assets/retter/dahi-bhalla.jpg" alt="Dahi Bhalla" loading="lazy">
+            <span class="menu-tag veg">Vegetar</span>
           </div>
           <div class="menu-card-body">
             <div class="menu-card-title">
-              <h3>Lamb Karahi</h3>
+              <h3>Dahi Bhalla</h3>
             </div>
-            <p>Tradisjonell lam wok med tomatmasala.</p>
+            <p>Linseboller i kremet yoghurt med søt og syrlig chutney.</p>
             <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
               target="_blank" rel="noopener" class="menu-order">Bestill →</a>
           </div>
@@ -183,6 +223,34 @@
           </div>
         </article>
 
+        <article class="menu-card reveal" data-cat="tilbehor">
+          <div class="menu-card-img">
+            <img src="assets/retter/seekh-naan.jpg" alt="Seekh Naan" loading="lazy">
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-title">
+              <h3>Seekh Naan</h3>
+            </div>
+            <p>Seekh kebab i naanbrød med sprø salat og saus.</p>
+            <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+              target="_blank" rel="noopener" class="menu-order">Bestill →</a>
+          </div>
+        </article>
+
+        <article class="menu-card reveal" data-cat="tilbehor vegetar">
+          <div class="menu-card-img menu-card-icon">
+            <span>🥭</span>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-title">
+              <h3>Mango Lassi</h3>
+            </div>
+            <p>Frisk kald yoghurtdrikk med mangosmak.</p>
+            <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
+              target="_blank" rel="noopener" class="menu-order">Bestill →</a>
+          </div>
+        </article>
+
       </div>
 
       <div class="meny-cta reveal">
@@ -197,9 +265,8 @@
       <div class="menu-grid menu-grid-chinese">
 
         <article class="menu-card reveal">
-          <div class="menu-card-img">
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chicken%20manchurian%20juicy.JPG?width=700"
-              alt="Chicken Manchurian" loading="lazy">
+          <div class="menu-card-img menu-card-icon">
+            <span>🥢</span>
           </div>
           <div class="menu-card-body">
             <div class="menu-card-title">
@@ -210,10 +277,8 @@
         </article>
 
         <article class="menu-card reveal">
-          <div class="menu-card-img">
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chinese%20Chilli%20chicken.jpg?width=700"
-              alt="Chicken Chili" loading="lazy">
-            <span class="menu-tag">Sterk</span>
+          <div class="menu-card-img menu-card-icon">
+            <span>🌶️</span>
           </div>
           <div class="menu-card-body">
             <div class="menu-card-title">
@@ -224,9 +289,8 @@
         </article>
 
         <article class="menu-card reveal">
-          <div class="menu-card-img">
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kaju%20chicken%20Masala.jpg?width=700"
-              alt="Chicken Cashewnøtter" loading="lazy">
+          <div class="menu-card-img menu-card-icon">
+            <span>🥜</span>
           </div>
           <div class="menu-card-body">
             <div class="menu-card-title">
@@ -237,9 +301,8 @@
         </article>
 
         <article class="menu-card reveal">
-          <div class="menu-card-img">
-            <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Chinese%20Chicken%20Chow%20Mein.JPG?width=700"
-              alt="Chicken Chow Mein" loading="lazy">
+          <div class="menu-card-img menu-card-icon">
+            <span>🍜</span>
           </div>
           <div class="menu-card-body">
             <div class="menu-card-title">
@@ -299,7 +362,6 @@
         <ul>
           <li><a href="index.html#om-oss">Om oss</a></li>
           <li><a href="menyer.html">Menyer</a></li>
-          <li><a href="menyer.html#frokost">Frokost</a></li>
           <li><a href="index.html#catering">Catering</a></li>
           <li><a href="pakker.html">Pakker</a></li>
           <li><a href="index.html#selskapslokale">Selskapslokale</a></li>
