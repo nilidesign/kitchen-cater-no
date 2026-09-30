@@ -7,7 +7,9 @@
   },
   "assets": {
     "directory": "."
-  }
-  // Custom domain (kitchen-cater.no) will be added here once the domain's
-  // DNS is managed by Cloudflare — see README.md for the steps.
+  },
+  "routes": [
+    { "pattern": "kitchen-cater.no", "custom_domain": true },
+    { "pattern": "www.kitchen-cater.no", "custom_domain": true }
+  ]
 }

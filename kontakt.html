@@ -43,6 +43,8 @@
         </ul>
       </nav>
 
+      <a href="tel:+4793009545" class="header-phone">📞 930 09 545</a>
+
       <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
         target="_blank" rel="noopener" class="btn btn-gold header-cta">
         <span>Bestill nå</span>
@@ -62,6 +64,7 @@
       <li><a href="index.html#catering" class="nav-link">Catering</a></li>
       <li><a href="index.html#frokost" class="nav-link">Frokost</a></li>
     </ul>
+    <a href="tel:+4793009545" class="header-phone header-phone-mobile">📞 Ring 930 09 545</a>
     <a href="https://www.foodora.no/restaurant/n6ps/indian-pakistani-by-kitchen-cater-mp-n6ps?srsltid=AU7gw4VC6UArlMkAn5jXv-a6zB0S--ksjvSzmjbhrYegsVRD4dbBBPpo"
       target="_blank" rel="noopener" class="btn btn-primary"
       style="width:100%;justify-content:center;margin-top:24px;">Bestill på Foodora</a>
@@ -85,27 +88,54 @@
             <input type="text" id="cf-navn" name="navn" autocomplete="name" required>
           </div>
           <div class="form-field">
-            <label for="cf-mobil">Mobil</label>
+            <label for="cf-mobil">Telefon</label>
             <input type="tel" id="cf-mobil" name="mobil" autocomplete="tel" required>
           </div>
         </div>
         <div class="form-row">
           <div class="form-field">
-            <label for="cf-antall">Antall personer</label>
-            <input type="number" id="cf-antall" name="antall" min="1" placeholder="f.eks. 40">
+            <label for="cf-epost">E-post</label>
+            <input type="email" id="cf-epost" name="epost" autocomplete="email" required>
           </div>
           <div class="form-field">
             <label for="cf-dato">Dato</label>
             <input type="date" id="cf-dato" name="dato">
           </div>
         </div>
-        <div class="form-field">
-          <span class="form-label">Hva gjelder henvendelsen?</span>
-          <div class="checkbox-group">
-            <label class="checkbox-item"><input type="checkbox" name="type" value="Catering"> Catering</label>
-            <label class="checkbox-item"><input type="checkbox" name="type" value="Selskapslokale">
-              Selskapslokale</label>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="cf-antall">Antall gjester</label>
+            <input type="number" id="cf-antall" name="antall" min="1" placeholder="f.eks. 40">
           </div>
+          <div class="form-field">
+            <label for="cf-servering">Ønsker du servering på stedet?</label>
+            <select id="cf-servering" name="servering">
+              <option value="Ikke oppgitt" selected>Velg...</option>
+              <option value="Ja">Ja</option>
+              <option value="Nei">Nei</option>
+              <option value="Usikker">Usikker</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-field">
+          <span class="form-label">Type arrangement</span>
+          <div class="checkbox-group">
+            <label class="checkbox-item"><input type="checkbox" name="type" value="Bryllup"> Bryllup</label>
+            <label class="checkbox-item"><input type="checkbox" name="type" value="Nikkah/Mehndi"> Nikkah/Mehndi</label>
+            <label class="checkbox-item"><input type="checkbox" name="type" value="Bursdag"> Bursdag</label>
+            <label class="checkbox-item"><input type="checkbox" name="type" value="Bedriftsarrangement"> Bedriftsarrangement</label>
+            <label class="checkbox-item"><input type="checkbox" name="type" value="Selskapslokale"> Selskapslokale</label>
+            <label class="checkbox-item"><input type="checkbox" name="type" value="Annet"> Annet</label>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="cf-adresse">Leveringsadresse</label>
+          <input type="text" id="cf-adresse" name="adresse" placeholder="Adresse arrangementet skal holdes på">
+        </div>
+        <div class="form-field">
+          <label for="cf-meny">Ønsket meny</label>
+          <input type="text" id="cf-meny" name="meny"
+            placeholder="F.eks. biryani, butter chicken, vegetaralternativ...">
         </div>
         <div class="form-field">
           <label for="cf-melding">Melding</label>
@@ -192,6 +222,7 @@
         <ul>
           <li>Skårerveien 30, 1470 Lørenskog</li>
           <li>Org.nr: 934 671 228</li>
+          <li><a href="tel:+4793009545">📞 930 09 545</a></li>
         </ul>
       </div>
 

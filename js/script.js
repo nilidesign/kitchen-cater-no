@@ -190,8 +190,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const navn = contactForm.elements.navn.value.trim();
       const mobil = contactForm.elements.mobil.value.trim();
+      const epost = contactForm.elements.epost ? contactForm.elements.epost.value.trim() : '';
       const antall = contactForm.elements.antall.value.trim();
       const dato = contactForm.elements.dato.value.trim();
+      const servering = contactForm.elements.servering ? contactForm.elements.servering.value.trim() : '';
+      const adresse = contactForm.elements.adresse ? contactForm.elements.adresse.value.trim() : '';
+      const meny = contactForm.elements.meny ? contactForm.elements.meny.value.trim() : '';
       const melding = contactForm.elements.melding.value.trim();
       const typer = Array.from(contactForm.querySelectorAll('input[name="type"]:checked'))
         .map(cb => cb.value)
@@ -200,10 +204,14 @@ document.addEventListener('DOMContentLoaded', () => {
       const subject = `Ny forespørsel fra nettsiden – ${navn}`;
       const bodyLines = [
         `Navn: ${navn}`,
-        `Mobil: ${mobil}`,
-        `Antall personer: ${antall || 'Ikke oppgitt'}`,
+        `Telefon: ${mobil}`,
+        `E-post: ${epost || 'Ikke oppgitt'}`,
+        `Antall gjester: ${antall || 'Ikke oppgitt'}`,
         `Dato: ${dato || 'Ikke oppgitt'}`,
-        `Gjelder: ${typer}`,
+        `Type arrangement: ${typer}`,
+        `Servering på stedet: ${servering || 'Ikke oppgitt'}`,
+        `Leveringsadresse: ${adresse || 'Ikke oppgitt'}`,
+        `Ønsket meny: ${meny || 'Ikke oppgitt'}`,
         '',
         'Melding:',
         melding || '(ingen melding)'
