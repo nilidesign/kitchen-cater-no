@@ -11,3 +11,6 @@ node_modules
 
 # Claude Code session files
 .claude/scheduled_tasks.lock
+
+# Raw source photos (originals kept locally; selected/renamed copies live in assets/retter/)
+/bilder
