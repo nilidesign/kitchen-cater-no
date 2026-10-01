@@ -104,8 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach(el => io.observe(el));
   }
 
-  // ---- Menu filters ---- (scoped to #menu-grid only — other .menu-card grids,
-  // like Hakka Chinese, have no data-cat and aren't meant to be filtered)
+  // ---- Menu filters ---- (scoped to #menu-grid only, in case other
+  // .menu-card grids without data-cat are added elsewhere on the page)
   const filterBtns = document.querySelectorAll('.filter-btn[data-filter]');
   const menuCards = document.querySelectorAll('#menu-grid .menu-card');
   if (filterBtns.length && menuCards.length) {
