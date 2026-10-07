@@ -176,6 +176,55 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape') { closeLightbox(); closePdfModal(); }
   });
 
+  // ---- Testimonial carousel ----
+  const testimonialTrack = document.getElementById('testimonial-track');
+  const testimonialPrev = document.getElementById('testimonial-prev');
+  const testimonialNext = document.getElementById('testimonial-next');
+  const testimonialDotsEl = document.getElementById('testimonial-dots');
+
+  if (testimonialTrack && testimonialPrev && testimonialNext && testimonialDotsEl) {
+    const cards = Array.from(testimonialTrack.children);
+
+    cards.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.type = 'button';
+      dot.className = 'testimonial-dot';
+      dot.setAttribute('aria-label', `Gå til anmeldelse ${i + 1}`);
+      dot.addEventListener('click', () => scrollToCard(i));
+      testimonialDotsEl.appendChild(dot);
+    });
+    const dots = Array.from(testimonialDotsEl.children);
+
+    function scrollToCard(index) {
+      const clamped = Math.max(0, Math.min(index, cards.length - 1));
+      testimonialTrack.scrollTo({ left: cards[clamped].offsetLeft - testimonialTrack.offsetLeft, behavior: 'smooth' });
+    }
+
+    function currentIndex() {
+      const trackLeft = testimonialTrack.scrollLeft;
+      let closest = 0;
+      let closestDist = Infinity;
+      cards.forEach((card, i) => {
+        const dist = Math.abs((card.offsetLeft - testimonialTrack.offsetLeft) - trackLeft);
+        if (dist < closestDist) { closestDist = dist; closest = i; }
+      });
+      return closest;
+    }
+
+    function updateDots() {
+      const idx = currentIndex();
+      dots.forEach((dot, i) => dot.classList.toggle('active', i === idx));
+    }
+
+    testimonialPrev.addEventListener('click', () => scrollToCard(currentIndex() - 1));
+    testimonialNext.addEventListener('click', () => scrollToCard(currentIndex() + 1));
+    testimonialTrack.addEventListener('scroll', () => {
+      window.clearTimeout(testimonialTrack._scrollTimeout);
+      testimonialTrack._scrollTimeout = window.setTimeout(updateDots, 100);
+    });
+    updateDots();
+  }
+
   // ---- Contact form → e-post ----
   const contactForm = document.getElementById('contact-form');
   const formNote = document.getElementById('form-note');
