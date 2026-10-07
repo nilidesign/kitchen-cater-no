@@ -176,6 +176,34 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape') { closeLightbox(); closePdfModal(); }
   });
 
+  // ---- Pakker: fane-navigasjon ----
+  const pakkerTabs = document.querySelectorAll('.pakker-tab[data-target]');
+  if (pakkerTabs.length) {
+    const tabTargets = Array.from(pakkerTabs)
+      .map(tab => document.getElementById(tab.dataset.target))
+      .filter(Boolean);
+
+    pakkerTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const target = document.getElementById(tab.dataset.target);
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    if (tabTargets.length && 'IntersectionObserver' in window) {
+      const tabIo = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            pakkerTabs.forEach(tab => {
+              tab.classList.toggle('active', tab.dataset.target === entry.target.id);
+            });
+          }
+        });
+      }, { threshold: 0.4, rootMargin: '-100px 0px -40% 0px' });
+      tabTargets.forEach(target => tabIo.observe(target));
+    }
+  }
+
   // ---- Testimonial carousel ----
   const testimonialTrack = document.getElementById('testimonial-track');
   const testimonialPrev = document.getElementById('testimonial-prev');
