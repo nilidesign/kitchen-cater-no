@@ -216,7 +216,7 @@ ul { list-style: none; }
 }
 #mobile-nav.open { right: 0; }
 #mobile-nav ul { display: flex; flex-direction: column; gap: 22px; }
-#mobile-nav .nav-link { font-size: 1.15rem; font-family: var(--font-head); font-weight: 600; }
+#mobile-nav .nav-link { font-size: 1.15rem; font-family: var(--font-head); font-weight: 600; color: #000; }
 
 #mobile-overlay {
   position: fixed; inset: 0; background: rgba(43,27,23,0.5); z-index: 999;
@@ -454,14 +454,13 @@ ul { list-style: none; }
 }
 
 .pakker-grid-section { padding-top: 20px; background: var(--cream-2); }
-.package-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-bottom: 44px; perspective: 1200px; }
+.package-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; margin-bottom: 44px; }
 .package-card {
   background: var(--white); border-radius: var(--radius); overflow: hidden; scroll-margin-top: 110px;
   box-shadow: var(--shadow-sm); position: relative;
-  transition: transform 0.2s ease-out, box-shadow 0.3s ease;
-  will-change: transform;
+  transition: transform var(--transition), box-shadow var(--transition);
 }
-.package-card:hover { box-shadow: var(--shadow-lg); }
+.package-card:hover { transform: translateY(-8px) scale(1.01); box-shadow: var(--shadow-lg); }
 .package-card::after {
   content: ''; position: absolute; top: 0; left: -160%; width: 55%; height: 100%;
   background: linear-gradient(115deg, transparent, rgba(255,255,255,0.45), transparent);
