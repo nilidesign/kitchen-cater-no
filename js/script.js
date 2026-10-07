@@ -176,6 +176,25 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape') { closeLightbox(); closePdfModal(); }
   });
 
+  // ---- Pakker: 3D-tilt på kort ----
+  const packageCards = document.querySelectorAll('.package-card');
+  const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (packageCards.length && !prefersReducedMotion) {
+    packageCards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const rotateX = ((y / rect.height) - 0.5) * -8;
+        const rotateY = ((x / rect.width) - 0.5) * 8;
+        card.style.transform = `perspective(1200px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-8px) scale(1.015)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+  }
+
   // ---- Pakker: fane-navigasjon ----
   const pakkerTabs = document.querySelectorAll('.pakker-tab[data-target]');
   if (pakkerTabs.length) {
